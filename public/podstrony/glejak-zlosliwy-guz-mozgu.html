@@ -1,0 +1,733 @@
+<!doctype html>
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>
+      Glejak mózgu — leczenie, rokowania, konsultacja | Michał Szyburski onkolog
+      radioterapeuta
+    </title>
+    <link
+      rel="canonical"
+      href="https://onkolog-szyburski.pl/podstrony/glejak-zlosliwy-guz-mozgu.html"
+    />
+    <meta
+      name="description"
+      content="Glejak mózgu — profil molekularny i właściwy plan leczenia decydują o przebiegu. Konsultacja onkologiczna z doświadczonym specjalistą. Warszawa i online."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --navy: #13283d;
+        --navy2: #1d3a53;
+        --paper: #f5f4f0;
+        --line: #ddd8cf;
+        --muted: #66727c;
+        --gold: #9b7a49;
+        --white: #fff;
+        --text: #243343;
+        --serif: Georgia, "Times New Roman", serif;
+        --sans: Inter, Arial, sans-serif;
+      }
+      * {
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        margin: 0;
+        color: var(--text);
+        font-family: var(--sans);
+        background: #fff;
+        -webkit-font-smoothing: antialiased;
+      }
+      a {
+        color: inherit;
+      }
+      .shell {
+        max-width: 1180px;
+        margin: auto;
+        padding: 0 32px;
+      }
+      .top {
+        position: sticky;
+        top: 0;
+        z-index: 50;
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(14px);
+        border-bottom: 1px solid var(--line);
+      }
+      .topin {
+        height: 76px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 26px;
+      }
+      .brand {
+        text-decoration: none;
+      }
+      .brand strong {
+        display: block;
+        font-family: var(--serif);
+        font-size: 20px;
+        font-weight: 500;
+        color: var(--navy);
+      }
+      .brand small {
+        display: block;
+        margin-top: 3px;
+        font-size: 10px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--muted);
+      }
+      .nav {
+        display: flex;
+        gap: 25px;
+        align-items: center;
+      }
+      .nav a {
+        text-decoration: none;
+        font-size: 13px;
+        color: #455561;
+      }
+      .call {
+        padding: 12px 18px;
+        border: 1px solid var(--navy);
+        font-weight: 650;
+        color: var(--navy);
+        text-decoration: none;
+        font-size: 13px;
+      }
+      .subhero {
+        background: var(--paper);
+        padding: 74px 0 62px;
+        border-bottom: 1px solid var(--line);
+      }
+      .crumb {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 0.15em;
+        color: var(--gold);
+        margin-bottom: 20px;
+      }
+      .subhero h1 {
+        font-family: var(--serif);
+        font-weight: 400;
+        color: var(--navy);
+        font-size: clamp(40px, 5vw, 66px);
+        line-height: 1.08;
+        letter-spacing: -0.03em;
+        margin: 0 0 23px;
+        max-width: 960px;
+      }
+      .subhero .lead {
+        font-size: 18px;
+        line-height: 1.75;
+        color: #53616c;
+        max-width: 820px;
+      }
+      .heroactions {
+        display: flex;
+        gap: 13px;
+        flex-wrap: wrap;
+        margin-top: 30px;
+      }
+      .btn {
+        display: inline-flex;
+        padding: 14px 20px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 650;
+      }
+      .btn.dark {
+        background: var(--navy);
+        color: #fff;
+      }
+      .btn.light {
+        border: 1px solid #aab3ba;
+        color: var(--navy);
+        background: #fff;
+      }
+      .trustline {
+        border-bottom: 1px solid var(--line);
+      }
+      .trustgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .trustgrid div {
+        padding: 22px 25px;
+        border-right: 1px solid var(--line);
+        font-size: 13px;
+        color: var(--muted);
+        line-height: 1.55;
+      }
+      .trustgrid div:last-child {
+        border-right: 0;
+      }
+      .trustgrid strong {
+        display: block;
+        color: var(--navy);
+        font-family: var(--serif);
+        font-size: 19px;
+        font-weight: 400;
+        margin-bottom: 5px;
+      }
+      .main {
+        padding: 82px 0;
+      }
+      .layout {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) 300px;
+        gap: 72px;
+        align-items: start;
+      }
+      .article h2 {
+        font-family: var(--serif);
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 1.2;
+        color: var(--navy);
+        margin: 54px 0 18px;
+      }
+      .article h2:first-child {
+        margin-top: 0;
+      }
+      .article h3 {
+        font-family: var(--serif);
+        font-weight: 400;
+        font-size: 25px;
+        color: var(--navy);
+        margin: 34px 0 13px;
+      }
+      .article p,
+      .article li {
+        font-size: 16px;
+        line-height: 1.9;
+        color: #52606b;
+      }
+      .article ul,
+      .article ol {
+        padding-left: 22px;
+      }
+      .article a {
+        color: var(--navy);
+      }
+      .article table {
+        width: 100%;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+      .article th,
+      .article td {
+        border: 1px solid var(--line);
+        padding: 12px;
+        text-align: left;
+      }
+      .article img {
+        max-width: 100%;
+        height: auto;
+      }
+      .sidebar {
+        position: sticky;
+        top: 104px;
+      }
+      .sidecard {
+        border: 1px solid var(--line);
+        padding: 27px;
+        background: #fff;
+        margin-bottom: 18px;
+      }
+      .sidecard.gold {
+        border-top: 3px solid var(--gold);
+      }
+      .sidecard h3 {
+        font-family: var(--serif);
+        font-size: 23px;
+        font-weight: 400;
+        color: var(--navy);
+        margin: 0 0 12px;
+      }
+      .sidecard p {
+        font-size: 13px;
+        line-height: 1.75;
+        color: var(--muted);
+        margin: 0 0 18px;
+      }
+      .sidecard .phone {
+        display: block;
+        font-family: var(--serif);
+        font-size: 23px;
+        color: var(--navy);
+        text-decoration: none;
+        border-bottom: 1px solid var(--line);
+        padding-bottom: 10px;
+      }
+      .coord {
+        background: var(--navy);
+        color: #fff;
+        padding: 80px 0;
+      }
+      .coordgrid {
+        display: grid;
+        grid-template-columns: 0.85fr 1.15fr;
+        gap: 75px;
+      }
+      .coord h2 {
+        font-family: var(--serif);
+        font-size: 43px;
+        line-height: 1.15;
+        font-weight: 400;
+        margin: 0 0 18px;
+      }
+      .coord .intro {
+        color: #c9d3db;
+        line-height: 1.8;
+      }
+      .coordlist {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
+        border-top: 1px solid #4a6074;
+      }
+      .coorditem {
+        padding: 25px 25px 25px 0;
+        border-bottom: 1px solid #4a6074;
+      }
+      .coorditem:nth-child(odd) {
+        padding-right: 32px;
+      }
+      .coorditem strong {
+        font-family: var(--serif);
+        font-size: 20px;
+        font-weight: 400;
+        display: block;
+        margin-bottom: 8px;
+      }
+      .coorditem span {
+        font-size: 13px;
+        line-height: 1.65;
+        color: #bdc9d2;
+      }
+      .related {
+        padding: 72px 0;
+        background: var(--paper);
+      }
+      .related h2 {
+        font-family: var(--serif);
+        font-weight: 400;
+        color: var(--navy);
+        font-size: 36px;
+      }
+      .relgrid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 14px;
+      }
+      .relgrid a {
+        background: #fff;
+        border: 1px solid var(--line);
+        padding: 18px;
+        text-decoration: none;
+        font-size: 14px;
+        color: var(--navy);
+      }
+      .final {
+        background: #0d2234;
+        color: #fff;
+        text-align: center;
+        padding: 76px 25px;
+      }
+      .final h2 {
+        font-family: var(--serif);
+        font-weight: 400;
+        font-size: 43px;
+        margin: 0 0 18px;
+      }
+      .final p {
+        color: #c6d0d8;
+        line-height: 1.7;
+      }
+      .final a {
+        display: inline-block;
+        margin-top: 18px;
+        color: #fff;
+        font-family: var(--serif);
+        font-size: 29px;
+        text-decoration: none;
+        border-bottom: 1px solid #81909c;
+        padding-bottom: 6px;
+      }
+      .foot {
+        background: #091a28;
+        color: #8fa0ad;
+        padding: 28px 0;
+        font-size: 12px;
+      }
+      .footin {
+        display: flex;
+        justify-content: space-between;
+        gap: 18px;
+        flex-wrap: wrap;
+      }
+      .mobilecall {
+        display: none;
+      }
+      @media (max-width: 900px) {
+        .shell {
+          padding: 0 20px;
+        }
+        .nav {
+          display: none;
+        }
+        .layout,
+        .coordgrid {
+          grid-template-columns: 1fr;
+          gap: 45px;
+        }
+        .sidebar {
+          position: static;
+        }
+        .trustgrid {
+          grid-template-columns: 1fr;
+        }
+        .trustgrid div {
+          border-right: 0;
+          border-bottom: 1px solid var(--line);
+        }
+        .coordlist {
+          grid-template-columns: 1fr;
+        }
+        .relgrid {
+          grid-template-columns: 1fr 1fr;
+        }
+        .mobilecall {
+          display: block;
+          position: fixed;
+          z-index: 99;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          background: var(--navy);
+          color: #fff;
+          text-align: center;
+          text-decoration: none;
+          padding: 14px;
+          font-weight: 650;
+        }
+        body {
+          padding-bottom: 49px;
+        }
+      }
+      @media (max-width: 600px) {
+        .subhero {
+          padding: 48px 0;
+        }
+        .subhero h1 {
+          font-size: 40px;
+        }
+        .subhero .lead {
+          font-size: 17px;
+        }
+        .main {
+          padding: 58px 0;
+        }
+        .article h2 {
+          font-size: 31px;
+        }
+        .relgrid {
+          grid-template-columns: 1fr;
+        }
+        .call span {
+          display: none;
+        }
+        .coord h2,
+        .final h2 {
+          font-size: 35px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header class="top">
+      <div class="shell topin">
+        <a class="brand" href="../index.html"
+          ><strong>Michał Szyburski</strong
+          ><small>specjalista onkolog radioterapeuta</small></a
+        >
+        <nav class="nav">
+          <a href="../index.html#opinia">Opinia onkologiczna</a
+          ><a href="../index.html#zakres">Zakres konsultacji</a
+          ><a href="../index.html#proces">Jak wygląda współpraca</a
+          ><a href="../index.html#o-mnie">O lekarzu</a>
+        </nav>
+        <a class="call" href="tel:+48577169800"
+          ><span>Zadzwoń</span> 577 169 800</a
+        >
+      </div>
+    </header>
+    <section class="subhero">
+      <div class="shell">
+        <div class="crumb">Profesjonalna opinia onkologiczna</div>
+        <h1>
+          Glejak i złośliwe guzy mózgu — objawy, leczenie, rokowania i
+          konsultacja
+        </h1>
+        <p class="lead">
+          Glejak mózgu — profil molekularny i właściwy plan leczenia decydują o
+          przebiegu. Konsultacja onkologiczna z doświadczonym specjalistą.
+          Warszawa i online.
+        </p>
+        <div class="heroactions">
+          <a class="btn dark" href="tel:+48577169800"
+            >Zadzwoń i rozpocznij konsultację</a
+          ><a class="btn light" href="#informacje">Przeczytaj informacje</a>
+        </div>
+      </div>
+    </section>
+    <section class="trustline">
+      <div class="shell trustgrid">
+        <div>
+          <strong>Indywidualna ocena</strong>Analiza dostępnej dokumentacji i
+          sytuacji klinicznej.
+        </div>
+        <div>
+          <strong>Pełne spektrum leczenia</strong>Chirurgia, radioterapia,
+          leczenie systemowe i strategie skojarzone.
+        </div>
+        <div>
+          <strong>Wsparcie organizacyjne</strong>Asystentka wyjaśnia kolejne
+          kroki i potrzebną dokumentację.
+        </div>
+      </div>
+    </section>
+    <main class="main" id="informacje">
+      <div class="shell layout">
+        <article class="article">
+          <h2>Objawy guza mózgu</h2>
+          <p>
+            Objawy zależą od lokalizacji guza i mogą obejmować: uporczywe bóle
+            głowy (często nasilone rano), napady padaczkowe pojawiające się po
+            raz pierwszy w dorosłości, narastające osłabienie kończyn lub
+            zaburzenia czucia, zaburzenia mowy, widzenia, pamięci lub zmiany
+            zachowania, nudności i wymioty. Wystąpienie takich objawów wymaga
+            pilnej diagnostyki obrazowej (rezonans magnetyczny), ale samo w
+            sobie nie przesądza o rozpoznaniu nowotworu złośliwego.
+          </p>
+          <h2>Rokowania — dlaczego statystyki to nie wyrok</h2>
+          <p>
+            Publikowane mediany przeżycia to wartości uśrednione dla całych grup
+            pacjentów. Nie opisują pojedynczego człowieka. Na rokowanie
+            wpływają: stopień złośliwości i typ guza, profil molekularny
+            (mutacja IDH, kodelecja 1p/19q, metylacja MGMT), zakres operacji,
+            wiek i stan ogólny oraz odpowiedź na leczenie. Glejaki niższego
+            stopnia rokują znacznie lepiej i pozwalają na wieloletnie
+            funkcjonowanie. Nawet w najbardziej agresywnych postaciach zdarzają
+            się pacjenci żyjący wielokrotnie dłużej niż średnia — a nowe terapie
+            i badania kliniczne stale tę granicę przesuwają. Statystyka opisuje
+            grupę; Ciebie opisuje Twój konkretny guz i Twój plan leczenia.
+          </p>
+          <h2>Znaczenie badań molekularnych</h2>
+          <p>
+            Współczesna klasyfikacja guzów mózgu opiera się nie tylko na obrazie
+            mikroskopowym, ale na cechach molekularnych. To one decydują o
+            rozpoznaniu, doborze leczenia i rokowaniu. Jeśli nie wykonano pełnej
+            diagnostyki molekularnej guza — to pierwsza rzecz, którą trzeba
+            uzupełnić, bo może całkowicie zmienić plan i perspektywy.
+          </p>
+          <h2>Możliwości leczenia</h2>
+          <p>
+            Standard obejmuje maksymalną bezpieczną resekcję guza, radioterapię
+            z zastosowaniem precyzyjnych technik oszczędzających zdrowy mózg
+            oraz chemioterapię (temozolomid). W wybranych sytuacjach stosuje się
+            radiochirurgię stereotaktyczną, ponowne napromienianie przy wznowie
+            oraz leczenie w ramach badań klinicznych — które w nowotworach mózgu
+            często dają dostęp do terapii niedostępnych standardowo.
+          </p>
+          <h2>Gdy guz jest nieoperacyjny lub nawraca</h2>
+          <p>
+            Nieoperacyjność nie oznacza braku leczenia. Radioterapia z
+            chemioterapią pozostaje skutecznym standardem, a profil molekularny
+            guza może wskazać dodatkowe możliwości. Przy wznowie również
+            istnieją opcje — ponowna operacja, ponowne napromienianie, leczenie
+            systemowe, badania kliniczne. To sytuacje, w których niezależna
+            ocena przypadku ma szczególną wartość.
+          </p>
+          <div class="cta-inline">
+            <p>
+              <strong
+                >Masz rozpoznanie albo zaproponowany plan leczenia, który chcesz
+                ocenić?</strong
+              >
+              Zadzwoń i umów konsultację — przed rozmową ustalimy, jak przekazać
+              dokumentację, a całość analizuję zanim porozmawiamy.
+              <strong>Konsultacja onkologiczna online — 600 zł</strong> (termin
+              do tygodnia).
+            </p>
+            <a href="tel:+48577169800"
+              ><svg viewbox="0 0 24 24">
+                <path
+                  d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path></svg
+              >Zadzwoń: 577 169 800</a
+            >  <a
+              href="dokumentacja.html"
+              style="
+                background: transparent;
+                color: var(--teal);
+                border: 2px solid var(--teal);
+              "
+              >Jak przygotować dokumentację →</a
+            >
+          </div>
+          <h2>Najczęstsze pytania — glejak / złośliwy guz mózgu</h2>
+          <div class="faq-item">
+            <p class="faq-q">Ile się żyje z glejakiem?</p>
+            <p class="faq-a">
+              To zależy przede wszystkim od stopnia złośliwości i typu guza oraz
+              jego profilu molekularnego. Glejaki niskiego stopnia pozwalają na
+              wieloletnie funkcjonowanie. W postaciach agresywnych statystyki są
+              poważne, ale są uśrednione — zdarzają się pacjenci żyjący znacznie
+              dłużej, a leczenie wciąż się rozwija. Każdy przypadek wymaga
+              indywidualnej oceny.
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">Guz mózgu jest nieoperacyjny — co dalej?</p>
+            <p class="faq-a">
+              Nieoperacyjność nie kończy leczenia. Radioterapia z chemioterapią
+              to skuteczny standard, a biopsja i badania molekularne pozwalają
+              dobrać terapię do konkretnego guza. Warto też sprawdzić dostępność
+              badań klinicznych.
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">Czy w glejaku warto szukać badań klinicznych?</p>
+            <p class="faq-a">
+              Tak. W nowotworach mózgu badania kliniczne często otwierają dostęp
+              do nowoczesnych terapii niedostępnych w standardzie. Podczas
+              konsultacji mogę wskazać, czy i gdzie warto ich szukać.
+            </p>
+          </div>
+          <div class="faq-item">
+            <p class="faq-q">Czy każdy guz mózgu to nowotwór złośliwy?</p>
+            <p class="faq-a">
+              Nie. Część guzów mózgu jest łagodna lub o niskiej złośliwości i
+              rośnie powoli. Dlatego dokładne rozpoznanie histopatologiczne i
+              molekularne jest tak ważne — zmienia całe podejście.
+            </p>
+          </div>
+        </article>
+        <aside class="sidebar">
+          <div class="sidecard gold">
+            <h3>Rozpocznij proces konsultacji</h3>
+            <p>
+              Asystentka zapozna się ze sprawą, wskaże potrzebną dokumentację i
+              przeprowadzi Państwa przez cały proces organizacyjny.
+            </p>
+            <a class="phone" href="tel:+48577169800">577 169 800</a>
+          </div>
+          <div class="sidecard">
+            <h3>Nie trzeba mieć pełnej dokumentacji</h3>
+            <p>
+              Podczas pierwszej rozmowy otrzymają Państwo informację, które
+              wyniki i opisy są potrzebne oraz czego ewentualnie brakuje.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <section class="coord">
+      <div class="shell coordgrid">
+        <div>
+          <div class="crumb">Organizacja konsultacji</div>
+          <h2>Pacjent nie musi samodzielnie przechodzić przez proces.</h2>
+          <p class="intro">
+            Pierwszy kontakt prowadzi asystentka. Pomaga ocenić, czy sprawa
+            odpowiada zakresowi praktyki, porządkuje kolejne etapy i pozostaje w
+            kontakcie aż do dnia konsultacji.
+          </p>
+        </div>
+        <div class="coordlist">
+          <div class="coorditem">
+            <strong>Wstępna kwalifikacja</strong
+            ><span
+              >Rozpoznanie, z czym pacjent się zgłasza i czy konsultacja będzie
+              odpowiednia.</span
+            >
+          </div>
+          <div class="coorditem">
+            <strong>Dokumentacja</strong
+            ><span
+              >Dokładna informacja, jakie wyniki, opisy i materiały należy
+              przesłać.</span
+            >
+          </div>
+          <div class="coorditem">
+            <strong>Termin i płatność</strong
+            ><span
+              >Przekazanie instrukcji, ustalenie terminu oraz potwierdzenie
+              organizacji spotkania.</span
+            >
+          </div>
+          <div class="coorditem">
+            <strong>Kontakt do konsultacji</strong
+            ><span
+              >Przypomnienie, kontrola kompletności materiałów i wsparcie w
+              sprawach organizacyjnych.</span
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="related">
+      <div class="shell">
+        <h2>Pozostałe obszary konsultacji</h2>
+        <div class="relgrid">
+          <a href="rak-piersi.html">Rak piersi</a
+          ><a href="rak-pluca.html">Rak płuca</a
+          ><a href="rak-jelita-grubego.html">Rak jelita grubego i odbytnicy</a
+          ><a href="rak-przelyku.html">Rak przełyku</a
+          ><a href="rak-zoladka.html">Rak żołądka</a
+          ><a href="rak-trzustki.html">Rak trzustki</a
+          ><a href="rak-watroby.html">Rak wątroby</a
+          ><a href="rak-drog-zolciowych.html">Rak dróg żółciowych</a
+          ><a href="rak-pecherzyka-zolciowego.html">Rak pęcherzyka żółciowego</a
+          ><a href="rak-pecherza-moczowego.html">Rak pęcherza moczowego</a
+          ><a href="rak-prostaty.html">Rak prostaty</a
+          ><a href="inne-nowotwory.html">Inne nowotwory</a>
+        </div>
+      </div>
+    </section>
+    <section class="final">
+      <h2>Decyzję terapeutyczną warto podjąć świadomie.</h2>
+      <p>
+        Asystentka wyjaśni, czy konsultacja będzie odpowiednia i wskaże dalsze
+        kroki.
+      </p>
+      <a href="tel:+48577169800">577 169 800</a>
+    </section>
+    <footer class="foot">
+      <div class="shell footin">
+        <span>© Michał Szyburski — specjalista onkolog radioterapeuta</span
+        ><span
+          ><a href="polityka-prywatnosci.html">Polityka prywatności</a> ·
+          <a href="regulamin.html">Regulamin</a></span
+        >
+      </div>
+    </footer>
+    <a class="mobilecall" href="tel:+48577169800"
+      >Zadzwoń i rozpocznij konsultację</a
+    >
+  </body>
+</html>

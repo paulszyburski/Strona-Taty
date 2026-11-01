@@ -1,0 +1,653 @@
+<!doctype html>
+
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      Metody leczenia nowotworów — chirurgia, onkologia, radioterapia | Michał
+      Szyburski onkolog radioterapeuta
+    </title>
+    <meta
+      content="Pełne spektrum metod leczenia onkologicznego: chirurgia, chemioterapia, immunoterapia, CyberKnife, radioterapia, protonoterapia. Konsultacja onkologiczna Warszawa."
+      name="description"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --teal: #0d6e5e;
+        --teal-d: #0a5a4d;
+        --teal-l: #1aaa8a;
+        --teal-pale: #e8f5f1;
+        --teal-ultra: #f4fbf9;
+        --ink: #0f1923;
+        --ink-2: #2d3748;
+        --ink-3: #4a5568;
+        --ink-4: #718096;
+        --white: #fff;
+        --off: #f8f7f4;
+        --border: #e8e4dc;
+        --serif: "Playfair Display", Georgia, serif;
+        --sans: "Inter", system-ui, sans-serif;
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: var(--sans);
+        background: var(--white);
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+        padding-bottom: 60px;
+      }
+      .bc {
+        max-width: 780px;
+        margin: 0 auto;
+        padding: 80px 2rem 0;
+        font-size: 0.78rem;
+        color: var(--ink-4);
+      }
+      .bc a {
+        color: var(--teal);
+        text-decoration: none;
+      }
+      .hero {
+        background: linear-gradient(135deg, var(--teal-d), var(--teal));
+        padding: 3rem 2rem 3.5rem;
+        text-align: center;
+      }
+      .hero h1 {
+        font-family: var(--serif);
+        font-size: clamp(1.8rem, 4vw, 3rem);
+        font-weight: 900;
+        color: #fff;
+        margin-bottom: 0.6rem;
+        line-height: 1.1;
+      }
+      .hero p {
+        font-size: 1rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.72);
+        line-height: 1.8;
+        max-width: 620px;
+        margin: 0 auto;
+      }
+      .con {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 2rem;
+      }
+      .section {
+        padding: 4rem 0;
+        border-bottom: 1px solid var(--border);
+      }
+      .section:last-child {
+        border-bottom: none;
+      }
+      .section-header {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+        margin-bottom: 2rem;
+      }
+      .sec-icon {
+        width: 52px;
+        height: 52px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .sec-icon svg {
+        width: 24px;
+        height: 24px;
+        stroke: #fff;
+        fill: none;
+        stroke-width: 1.8;
+      }
+      .sec-h {
+        font-family: var(--serif);
+        font-size: clamp(1.4rem, 2.5vw, 1.9rem);
+        font-weight: 700;
+        color: var(--ink);
+        margin-bottom: 0.4rem;
+      }
+      .sec-sub {
+        font-size: 0.88rem;
+        font-weight: 300;
+        color: var(--ink-4);
+        line-height: 1.7;
+      }
+      .methods {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1rem;
+        margin-top: 1.5rem;
+      }
+      .method {
+        background: var(--off);
+        border: 1px solid var(--border);
+        border-radius: 8px;
+        padding: 1.4rem 1.6rem;
+        transition: all 0.15s;
+      }
+      .method:hover {
+        background: var(--teal-ultra);
+        border-color: var(--teal-l);
+        transform: translateY(-1px);
+      }
+      .method a {
+        text-decoration: none;
+        display: block;
+      }
+      .mname {
+        font-family: var(--serif);
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--ink);
+        margin-bottom: 0.4rem;
+      }
+      .mname a {
+        color: inherit;
+        text-decoration: none;
+      }
+      .mdesc {
+        font-size: 0.84rem;
+        font-weight: 300;
+        color: var(--ink-3);
+        line-height: 1.7;
+      }
+      .mlink {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.3rem;
+        font-size: 0.78rem;
+        font-weight: 600;
+        color: var(--teal);
+        margin-top: 0.5rem;
+        text-decoration: none;
+      }
+      .mlink:hover {
+        text-decoration: underline;
+      }
+      .cta-box {
+        background: linear-gradient(135deg, var(--teal-d), var(--teal));
+        border-radius: 12px;
+        padding: 2.5rem;
+        text-align: center;
+        margin: 4rem 0;
+      }
+      .cta-box h2 {
+        font-family: var(--serif);
+        font-size: 1.6rem;
+        font-weight: 700;
+        color: #fff;
+        margin-bottom: 0.5rem;
+      }
+      .cta-box p {
+        font-size: 0.9rem;
+        color: rgba(255, 255, 255, 0.72);
+        margin-bottom: 1.5rem;
+      }
+      .btn-w {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        background: #fff;
+        color: var(--teal);
+        font-size: 1rem;
+        font-weight: 700;
+        text-decoration: none;
+        padding: 0.85rem 2rem;
+        border-radius: 50px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+      }
+      .btn-w svg {
+        width: 18px;
+        height: 18px;
+        stroke: var(--teal);
+        fill: none;
+        stroke-width: 2;
+      }
+      footer {
+        background: #0f1923;
+        padding: 2rem;
+        text-align: center;
+      }
+      footer p {
+        font-size: 0.74rem;
+        color: rgba(255, 255, 255, 0.22);
+        line-height: 1.8;
+      }
+      footer a {
+        color: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+      }
+      @media (max-width: 600px) {
+        .methods {
+          grid-template-columns: 1fr;
+        }
+        .section-header {
+          flex-direction: column;
+          gap: 1rem;
+        }
+        .con {
+          padding: 0 1.5rem;
+        }
+      }
+    </style>
+    <link
+      href="https://onkolog-szyburski.pl/podstrony/metody-leczenia.html"
+      rel="canonical"
+    />
+    <meta content="article" property="og:type" />
+    <meta content="pl_PL" property="og:locale" />
+    <meta
+      content="Metody leczenia nowotworów — chirurgia, onkologia, radioterapia | Michał Szyburski onkolog radioterapeuta"
+      property="og:title"
+    />
+    <meta
+      content="Pełne spektrum metod leczenia onkologicznego: chirurgia, chemioterapia, immunoterapia, CyberKnife, radioterapia, protonoterapia. Konsultacja onkologiczna Warszawa."
+      property="og:description"
+    />
+    <meta
+      content="https://onkolog-szyburski.pl/podstrony/metody-leczenia.html"
+      property="og:url"
+    />
+    <meta
+      content="https://onkolog-szyburski.pl/img/og-szyburski.jpg"
+      property="og:image"
+    />
+    <link href="../premium.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav
+      style="
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid #e8e4dc;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+      "
+    >
+      <a
+        href="../index.html"
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 1px;
+          text-decoration: none;
+        "
+      >
+        <span
+          style="
+            font-family: &quot;Playfair Display&quot;, Georgia, serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #0f1923;
+          "
+          >Michał <span style="color: #0d6e5e">Szyburski</span></span
+        >
+        <span
+          style="
+            font-size: 0.58rem;
+            font-weight: 500;
+            color: #718096;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+          "
+          >Specjalista onkolog radioterapeuta · Warszawa</span
+        >
+      </a>
+      <a
+        href="tel:+48577169800"
+        style="
+          display: flex;
+          align-items: center;
+          gap: 0.4rem;
+          font-size: 0.95rem;
+          font-weight: 700;
+          color: #0d6e5e;
+          text-decoration: none;
+        "
+      >
+        <svg
+          fill="none"
+          height="15"
+          stroke="#0d6e5e"
+          stroke-width="2"
+          viewbox="0 0 24 24"
+          width="15"
+        >
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        577 169 800
+      </a>
+    </nav>
+    <div class="bc">
+      <a href="../index.html">Strona główna</a>  ›  Metody leczenia
+    </div>
+    <div class="hero">
+      <h1>Metody leczenia nowotworów</h1>
+      <p>
+        Doradzam niezależnie — mam wiedzę o pełnym spektrum leczenia
+        onkologicznego. Nie jestem związany z jedną metodą ani jednym ośrodkiem.
+        Oceniam zasadność dostępnych metod w kontekście rozpoznania,
+        dotychczasowego leczenia i indywidualnej sytuacji pacjenta.
+      </p>
+    </div>
+    <div class="con">
+      <section class="section" id="chirurgia">
+        <div class="section-header">
+          <div class="sec-icon" style="background: #1a3a5c">
+            <svg viewbox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 class="sec-h">Chirurgia onkologiczna</h2>
+            <p class="sec-sub">
+              Podstawowa metoda leczenia wielu nowotworów — jej wartość zależy
+              od zaawansowania choroby, doświadczenia ośrodka i właściwej
+              kwalifikacji przedoperacyjnej.
+            </p>
+          </div>
+        </div>
+        <div class="methods">
+          <div class="method">
+            <div class="mname">Resekcja chirurgiczna</div>
+            <p class="mdesc">
+              Klasyczne usunięcie guza i otaczających tkanek — złoty standard w
+              wielu lokalizacjach. Wyniki zależą w dużej mierze od ośrodka i
+              liczby wykonywanych operacji rocznie.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Chirurgia laparoskopowa i robotyczna</div>
+            <p class="mdesc">
+              Małoinwazyjna alternatywa dla klasycznej operacji — mniejsze rany,
+              szybszy powrót do sprawności, porównywalne wyniki onkologiczne
+              przy właściwej kwalifikacji.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Ablacja termiczna (RFA, MWA)</div>
+            <p class="mdesc">
+              Niszczenie guza ciepłem (fale radiowe lub mikrofale) przez cienką
+              igłę — stosowana głównie w guzach wątroby, nerki i płuca u
+              pacjentów niekwalifikujących się do operacji.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Transplantacja narządów</div>
+            <p class="mdesc">
+              Przeszczepienie wątroby lub nerki w wybranych przypadkach raka —
+              leczy jednocześnie guz i chorobę podstawową (marskość). Wymaga
+              ścisłych kryteriów kwalifikacji (kryteria mediolańskie).
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="onkologia">
+        <div class="section-header">
+          <div class="sec-icon" style="background: #1a4a3a">
+            <svg viewbox="0 0 24 24">
+              <path
+                d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"
+              ></path>
+            </svg>
+          </div>
+          <div>
+            <h2 class="sec-h">Onkologia kliniczna — leczenie systemowe</h2>
+            <p class="sec-sub">
+              Leczenie działające na cały organizm — stosowane samodzielnie lub
+              w skojarzeniu z chirurgią i radioterapią. Dobór zależy od profilu
+              molekularnego guza.
+            </p>
+          </div>
+        </div>
+        <div class="methods">
+          <div class="method">
+            <div class="mname">Chemioterapia</div>
+            <p class="mdesc">
+              Leki cytostatyczne niszczące szybko dzielące się komórki.
+              Stosowane przed operacją (neoadjuwantowo), po niej (adjuwantowo)
+              lub jako leczenie samodzielne. Nowoczesne schematy (FOLFIRINOX,
+              FLOT, AC-T i inne) istotnie poprawiły wyniki w wielu nowotworach.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Immunoterapia</div>
+            <p class="mdesc">
+              Leki uwalniające układ odpornościowy do walki z nowotworem
+              (inhibitory punktów kontrolnych — PD-1, PD-L1, CTLA-4).
+              Zrewolucjonizowała leczenie czerniaka, raka płuca, pęcherza, nerki
+              i wielu innych. Skuteczność zależy od ekspresji PD-L1 i statusu
+              MSI/TMB.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Terapie celowane (targeted therapy)</div>
+            <p class="mdesc">
+              Leki działające na konkretne zaburzenia molekularne guza —
+              inhibitory kinaz (EGFR, ALK, BRAF, FGFR2, IDH1, HER2 i inne).
+              Wymagają wcześniejszego badania molekularnego. Często dają
+              długotrwałą kontrolę choroby przy minimalnych działaniach
+              niepożądanych.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Hormonoterapia</div>
+            <p class="mdesc">
+              Blokada hormonów pobudzających wzrost guza — podstawa leczenia
+              raka prostaty (kastracja hormonalna, nowoczesna hormonoterapia:
+              enzalutamid, abirateronu) i raka piersi (tamoksyfen, inhibitory
+              aromatazy, CDK4/6).
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Leczenie radioizotopowe</div>
+            <p class="mdesc">
+              Lutetium PSMA-617 (rak prostaty), TARE/radioembolizacja Y-90
+              (wątroba), PRRT (nowotwory neuroendokrynne) — precyzyjne
+              dostarczanie promieniowania bezpośrednio do komórek nowotworowych
+              przez krew.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Koniugaty lek-przeciwciało (ADC)</div>
+            <p class="mdesc">
+              Nowoczesna klasa leków łącząca precyzję immunoterapii z siłą
+              chemioterapii — m.in. trastuzumab derukstekan (rak piersi, płuca),
+              enfortumab wedotin (rak pęcherza). Jedna z najszybciej
+              rozwijających się dziedzin onkologii.
+            </p>
+          </div>
+        </div>
+      </section>
+      <section class="section" id="radioterapia">
+        <div class="section-header">
+          <div class="sec-icon" style="background: #4a1a1a">
+            <svg viewbox="0 0 24 24">
+              <path d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+            </svg>
+          </div>
+          <div>
+            <h2 class="sec-h">Radioterapia</h2>
+            <p class="sec-sub">
+              Leczenie promieniowaniem jonizującym — nowoczesne techniki
+              pozwalają dziś podawać wysokie dawki z precyzją do milimetra,
+              skutecznie lecząc guzy niekwalifikujące się do operacji.
+            </p>
+          </div>
+        </div>
+        <div class="methods">
+          <div class="method">
+            <div class="mname">
+              <a href="https://www.cyberknife.pl" rel="noopener" target="_blank"
+                >CyberKnife ↗</a
+              >
+            </div>
+            <p class="mdesc">
+              Robotyczny system radiochirurgii stereotaktycznej — ramię z
+              głowicą linac śledzi ruch pacjenta i oddech w czasie rzeczywistym,
+              podając wiązki z ponad 1000 pozycji. Wyjątkowa precyzja przy
+              małych guzach (prostata, mózg, płuco, wątroba). Bezbolesny, bez
+              hospitalizacji.
+            </p>
+            <a
+              class="mlink"
+              href="https://www.cyberknife.pl"
+              rel="noopener"
+              target="_blank"
+              >Więcej na cyberknife.pl ↗</a
+            >
+          </div>
+          <div class="method">
+            <div class="mname">SBRT — stereotaktyczna radioterapia ciała</div>
+            <p class="mdesc">
+              Podanie bardzo wysokich dawek w 3–5 frakcjach z precyzją
+              submilimetrową. Standard leczenia wczesnego raka płuca u pacjentów
+              niekwalifikujących się do operacji, ognisk przerzutowych
+              (oligometastazy), guzów wątroby i trzustki. Krótki czas leczenia,
+              duża skuteczność.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Radioterapia IMRT / VMAT</div>
+            <p class="mdesc">
+              Modulacja intensywności wiązki (IMRT) i rotacyjna radioterapia
+              łukowa (VMAT) pozwalają precyzyjnie dopasować dawkę do kształtu
+              guza, oszczędzając sąsiednie narządy. Standard w raku prostaty,
+              głowy i szyi, piersi, odbytnicy.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Protonoterapia</div>
+            <p class="mdesc">
+              Radioterapia protonami — cząstki zatrzymują się dokładnie w guzie
+              (pik Bragga), minimalizując dawkę poza nim. Szczególna wartość u
+              dzieci, przy guzach w pobliżu krytycznych struktur (rdzeń, oczy,
+              pień mózgu) i guzach mózgu.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Brachyterapia</div>
+            <p class="mdesc">
+              Napromienianie od wewnątrz — źródło radioaktywne umieszczane
+              bezpośrednio w guzie lub w jego pobliżu. Stosowana w raku prostaty
+              (ziarna radioaktywne), szyjki macicy i trzonu macicy, piersi,
+              przełyku. Wysoka dawka lokalna, minimalne obciążenie tkanek
+              zdrowych.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Radiochirurgia / Gamma Knife</div>
+            <p class="mdesc">
+              Precyzyjne jednorazowe napromienianie małych zmian
+              wewnątrzczaszkowych — przerzuty do mózgu, nerwiaki, oponiaki,
+              tętniaki. Gamma Knife i inne systemy radiochirurgiczne pozwalają
+              leczyć bez otwierania czaszki.
+            </p>
+          </div>
+          <div class="method">
+            <div class="mname">Chemioradioterapia skojarzona</div>
+            <p class="mdesc">
+              Jednoczesne stosowanie chemioterapii i radioterapii —
+              chemioterapia uczula komórki nowotworowe na promieniowanie.
+              Standard w raku odbytnicy, przełyku, szyjki macicy, płuca i
+              głowy/szyi. Wymaga dokładnego planowania dawki i doboru leków.
+            </p>
+          </div>
+        </div>
+      </section>
+      <div class="cta-box">
+        <h2>Nie wiesz która metoda jest właściwa?</h2>
+        <p>
+          Przeanalizuję Twoją dokumentację i omówię wszystkie opcje —
+          chirurgiczne, onkologiczne i radioterapeutyczne. Konsultacja online:
+          600 zł. Termin wymaga potwierdzenia przez asystentkę.
+        </p>
+        <a class="btn-w" href="tel:+48577169800">
+          <svg viewbox="0 0 24 24">
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path>
+          </svg>
+          Zadzwoń: 577 169 800
+        </a>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Michał Szyburski · Specjalista onkolog radioterapeuta · Warszawa · tel.
+        577 169 800 (codziennie 8:00–17:00)<br /><a href="../index.html"
+          >← Strona główna</a
+        >
+        · <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+      </p>
+    </footer>
+    <a
+      href="tel:+48577169800"
+      style="
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 300;
+        background: linear-gradient(90deg, #0a5a4d, #0d6e5e);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 0.95rem;
+        text-decoration: none;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+      "
+    >
+      <svg
+        fill="none"
+        height="18"
+        stroke="#fff"
+        stroke-width="2.2"
+        viewbox="0 0 24 24"
+        width="18"
+      >
+        <path
+          d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
+      <span style="color: #fff; font-size: 1rem; font-weight: 600"
+        >Zadzwoń: 577 169 800</span
+      >
+    </a>
+  </body>
+</html>

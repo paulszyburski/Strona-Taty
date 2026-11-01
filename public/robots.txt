@@ -1,0 +1,64 @@
+# onkolog-szyburski.pl — robots.txt
+# Wyszukiwarki i asystenci AI mają pełny dostęp do treści strony.
+
+User-agent: *
+Allow: /
+
+# --- Wyszukiwarki ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# --- Google AI (Gemini, AI Overviews) ---
+User-agent: Google-Extended
+Allow: /
+
+# --- OpenAI (ChatGPT) ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# --- Anthropic (Claude) ---
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+# --- Perplexity ---
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# --- Microsoft Copilot / Apple / Meta / inne ---
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: DuckAssistBot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+Sitemap: https://onkolog-szyburski.pl/sitemap.xml

@@ -1,0 +1,594 @@
+<!doctype html>
+
+<html lang="pl">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>
+      Jak przygotować dokumentację do konsultacji | Michał Szyburski — Onkolog
+      Radioterapeuta
+    </title>
+    <meta
+      content="Dokumentację przekazujesz po telefonicznej rezerwacji terminu. Sprawdź, jakie dokumenty przygotować na konsultację onkologiczną. Tel. 577 169 800, codziennie 8:00–17:00."
+      name="description"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&amp;family=Inter:wght@300;400;500;600;700&amp;display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --teal: #0d6e5e;
+        --teal-d: #0a5a4d;
+        --teal-l: #1aaa8a;
+        --teal-pale: #e8f5f1;
+        --teal-ultra: #f4fbf9;
+        --ink: #0f1923;
+        --ink-2: #2d3748;
+        --ink-3: #4a5568;
+        --ink-4: #718096;
+        --white: #fff;
+        --off: #f8f7f4;
+        --border: #e8e4dc;
+        --red: #e53e3e;
+        --serif: "Playfair Display", Georgia, serif;
+        --sans: "Inter", system-ui, sans-serif;
+        --sh: 0 4px 16px rgba(0, 0, 0, 0.07), 0 2px 6px rgba(0, 0, 0, 0.04);
+        --sh-lg:
+          0 24px 60px rgba(13, 110, 94, 0.14), 0 8px 24px rgba(0, 0, 0, 0.06);
+      }
+      *,
+      *::before,
+      *::after {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: var(--sans);
+        background: var(--off);
+        color: var(--ink);
+        -webkit-font-smoothing: antialiased;
+        padding-bottom: 60px;
+      }
+      nav {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 200;
+        height: 62px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 2rem;
+        background: rgba(255, 255, 255, 0.97);
+        backdrop-filter: blur(16px);
+        border-bottom: 1px solid var(--border);
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+      }
+      .nlogo {
+        display: flex;
+        flex-direction: column;
+        gap: 1px;
+        text-decoration: none;
+      }
+      .nname {
+        font-family: var(--serif);
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .nname span {
+        color: var(--teal);
+      }
+      .nrole {
+        font-size: 0.58rem;
+        font-weight: 500;
+        color: var(--ink-4);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+      }
+      .nphone {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: var(--teal);
+        text-decoration: none;
+      }
+      .nphone svg {
+        width: 15px;
+        height: 15px;
+        stroke: var(--teal);
+        fill: none;
+        stroke-width: 2;
+      }
+      /* HERO */
+      .hero {
+        background: linear-gradient(
+          140deg,
+          #081712 0%,
+          var(--teal-d) 55%,
+          var(--teal) 100%
+        );
+        padding: 7.5rem 2rem 5rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .hero::before {
+        content: "";
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(26, 170, 138, 0.25),
+          transparent 65%
+        );
+        top: -250px;
+        right: -150px;
+      }
+      .hero::after {
+        content: "";
+        position: absolute;
+        width: 400px;
+        height: 400px;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          rgba(255, 255, 255, 0.05),
+          transparent 60%
+        );
+        bottom: -180px;
+        left: -100px;
+      }
+      .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: rgba(26, 170, 138, 0.15);
+        border: 1px solid rgba(26, 170, 138, 0.35);
+        color: var(--teal-l);
+        font-size: 0.64rem;
+        font-weight: 600;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        padding: 0.4rem 1rem;
+        border-radius: 50px;
+        margin-bottom: 1.4rem;
+        position: relative;
+        z-index: 1;
+      }
+      .hero-badge::before {
+        content: "";
+        width: 6px;
+        height: 6px;
+        border-radius: 50%;
+        background: var(--teal-l);
+      }
+      .hero h1 {
+        font-family: var(--serif);
+        font-size: clamp(1.8rem, 4vw, 2.9rem);
+        font-weight: 900;
+        color: #fff;
+        margin-bottom: 0.8rem;
+        line-height: 1.08;
+        position: relative;
+        z-index: 1;
+      }
+      .hero p {
+        font-size: 0.95rem;
+        font-weight: 300;
+        color: rgba(255, 255, 255, 0.72);
+        line-height: 1.8;
+        max-width: 540px;
+        margin: 0 auto;
+        position: relative;
+        z-index: 1;
+      }
+      .hero-steps {
+        display: flex;
+        justify-content: center;
+        gap: 2.5rem;
+        margin-top: 2.2rem;
+        position: relative;
+        z-index: 1;
+        flex-wrap: wrap;
+      }
+      .hstep {
+        display: flex;
+        align-items: center;
+        gap: 0.6rem;
+        font-size: 0.78rem;
+        color: rgba(255, 255, 255, 0.55);
+      }
+      .hstep b {
+        width: 22px;
+        height: 22px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.7rem;
+        font-weight: 700;
+        color: #fff;
+        flex-shrink: 0;
+      }
+      /* CARD */
+      .con {
+        max-width: 680px;
+        margin: -2.5rem auto 0;
+        padding: 0 1.5rem 3rem;
+        position: relative;
+        z-index: 2;
+      }
+      .card {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: var(--sh-lg);
+        padding: 2.5rem;
+        margin-bottom: 1.5rem;
+      }
+      .btn-call {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: var(--teal);
+        color: #fff;
+        font-size: 0.88rem;
+        font-weight: 600;
+        padding: 0.75rem 1.7rem;
+        border-radius: 50px;
+        border: none;
+        cursor: pointer;
+        transition: all 0.2s;
+        box-shadow: 0 4px 14px rgba(13, 110, 94, 0.3);
+        position: relative;
+        z-index: 1;
+      }
+      .btn-call:hover {
+        background: var(--teal-l);
+        transform: translateY(-1px);
+      }
+      /* FILES */
+      @keyframes slideIn {
+        from {
+          opacity: 0;
+          transform: translateY(-4px);
+        }
+        to {
+          opacity: 1;
+          transform: none;
+        }
+      }
+      /* METER */
+      /* ALERTS */
+      /* MSG */
+      .msgbox textarea:focus {
+        outline: none;
+        border-color: var(--teal-l);
+        box-shadow: 0 0 0 3px rgba(26, 170, 138, 0.12);
+      }
+      /* SEND */
+      .send-note a {
+        color: var(--teal);
+        text-decoration: none;
+        font-weight: 500;
+      }
+      /* INFO CARDS */
+      .info-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1.5rem;
+      }
+      .icard {
+        background: #fff;
+        border-radius: 16px;
+        box-shadow: var(--sh);
+        padding: 1.8rem;
+      }
+      .icard-head {
+        display: flex;
+        align-items: center;
+        gap: 0.8rem;
+        margin-bottom: 1rem;
+      }
+      .ic-icon {
+        width: 38px;
+        height: 38px;
+        border-radius: 10px;
+        background: var(--teal-pale);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-shrink: 0;
+      }
+      .ic-icon svg {
+        width: 18px;
+        height: 18px;
+        stroke: var(--teal);
+        fill: none;
+        stroke-width: 2;
+      }
+      .icard h3 {
+        font-family: var(--serif);
+        font-size: 1.05rem;
+        font-weight: 700;
+        color: var(--ink);
+      }
+      .icard ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.55rem;
+      }
+      .icard li {
+        font-size: 0.84rem;
+        color: var(--ink-3);
+        display: flex;
+        align-items: flex-start;
+        gap: 0.55rem;
+        line-height: 1.6;
+      }
+      .icard li::before {
+        content: "✓";
+        color: var(--teal);
+        font-weight: 700;
+        flex-shrink: 0;
+      }
+      .icard p {
+        font-size: 0.84rem;
+        color: var(--ink-3);
+        line-height: 1.7;
+      }
+      .icard .note {
+        font-size: 0.78rem;
+        color: var(--ink-4);
+        margin-top: 0.8rem;
+        font-style: italic;
+      }
+      footer {
+        background: #0f1923;
+        padding: 2rem;
+        text-align: center;
+        margin-top: 2rem;
+      }
+      footer p {
+        font-size: 0.74rem;
+        color: rgba(255, 255, 255, 0.22);
+        line-height: 1.8;
+      }
+      footer a {
+        color: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+      }
+      .callbar {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 300;
+        background: linear-gradient(90deg, var(--teal-d), var(--teal));
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 0.95rem;
+        text-decoration: none;
+        box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.15);
+      }
+      .callbar span {
+        color: #fff;
+        font-size: 1rem;
+        font-weight: 600;
+      }
+      .callbar svg {
+        width: 18px;
+        height: 18px;
+        stroke: #fff;
+        fill: none;
+        stroke-width: 2.2;
+      }
+      @media (min-width: 900px) {
+        .callbar {
+          display: none;
+        }
+        body {
+          padding-bottom: 0;
+        }
+      }
+      @media (max-width: 640px) {
+        .card {
+          padding: 1.6rem;
+        }
+        .info-grid {
+          grid-template-columns: 1fr;
+        }
+        .hero-steps {
+          gap: 1.2rem;
+        }
+        .con {
+          padding: 0 1rem 2rem;
+        }
+      }
+    </style>
+    <link
+      href="https://onkolog-szyburski.pl/podstrony/dokumentacja.html"
+      rel="canonical"
+    />
+    <meta content="article" property="og:type" />
+    <meta content="pl_PL" property="og:locale" />
+    <meta
+      content="Jak przygotować dokumentację do konsultacji | Michał Szyburski — Onkolog Radioterapeuta"
+      property="og:title"
+    />
+    <meta
+      content="Dokumentację przekazujesz po telefonicznej rezerwacji terminu. Sprawdź, jakie dokumenty przygotować na konsultację onkologiczną."
+      property="og:description"
+    />
+    <meta
+      content="https://onkolog-szyburski.pl/podstrony/dokumentacja.html"
+      property="og:url"
+    />
+    <meta
+      content="https://onkolog-szyburski.pl/img/og-szyburski.jpg"
+      property="og:image"
+    />
+    <link href="../premium.css" rel="stylesheet" />
+  </head>
+  <body>
+    <nav>
+      <a class="nlogo" href="../index.html">
+        <span class="nname">Michał <span>Szyburski</span></span>
+        <span class="nrole">Specjalista onkolog radioterapeuta · Warszawa</span>
+      </a>
+      <a class="nphone" href="tel:+48577169800">
+        <svg viewbox="0 0 24 24">
+          <path
+            d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          ></path>
+        </svg>
+        577 169 800
+      </a>
+    </nav>
+    <div class="hero">
+      <div class="hero-badge">Przed konsultacją</div>
+      <h1>Jak przygotować dokumentację do konsultacji</h1>
+      <p>
+        <strong
+          >Dokumentacja jest analizowana przed konsultacją — bez niej
+          konsultacja może być mniej precyzyjna.</strong
+        >
+        Dzięki analizie <em>przed</em> rozmową czas konsultacji poświęcamy w
+        całości na Twoje pytania i możliwości leczenia.
+      </p>
+      <div class="hero-steps">
+        <div class="hstep"><b>1</b> Zadzwoń i zarezerwuj termin</div>
+        <div class="hstep"><b>2</b> Ustalimy sposób przekazania dokumentów</div>
+        <div class="hstep"><b>3</b> Analizuję je przed konsultacją</div>
+        <div class="hstep"><b>4</b> Przygotuj wyniki i pytania</div>
+      </div>
+    </div>
+    <div class="con">
+      <div class="card" style="text-align: center; padding: 2.6rem 2rem">
+        <h2
+          style="
+            font-family: var(--serif);
+            font-size: 1.5rem;
+            color: var(--ink);
+            margin-bottom: 0.9rem;
+          "
+        >
+          Dokumentację przekazujesz po telefonicznej rezerwacji terminu
+        </h2>
+        <p
+          style="
+            font-size: 0.97rem;
+            color: var(--ink-3);
+            line-height: 1.75;
+            max-width: 640px;
+            margin: 0 auto 1.8rem;
+          "
+        >
+          Podczas rozmowy otrzymasz informację, jakie dokumenty są potrzebne w
+          Twojej sytuacji i jak je przekazać. Całą dokumentację analizuję
+          <em>przed</em> konsultacją — dzięki temu czas rozmowy poświęcamy w
+          całości na Twoje pytania i możliwości leczenia.
+        </p>
+        <a
+          class="btn-call"
+          href="tel:+48577169800"
+          style="font-size: 1rem; padding: 0.95rem 2.2rem"
+          ><svg
+            style="
+              width: 18px;
+              height: 18px;
+              stroke: #fff;
+              fill: none;
+              stroke-width: 2.2;
+            "
+            viewbox="0 0 24 24"
+          >
+            <path
+              d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            ></path></svg
+          > Zadzwoń i ustal, jak przesłać dokumentację: 577 169 800</a
+        >
+        <p style="font-size: 0.82rem; color: var(--ink-4); margin-top: 1rem">
+          Telefon czynny codziennie 8:00–17:00 — 7 dni w tygodniu
+        </p>
+      </div>
+      <div class="info-grid">
+        <div class="icard">
+          <div class="icard-head">
+            <div class="ic-icon">
+              <svg viewbox="0 0 24 24">
+                <path d="M9 12l2 2 4-4"></path>
+                <circle cx="12" cy="12" r="10"></circle>
+              </svg>
+            </div>
+            <h3>Co przygotować?</h3>
+          </div>
+          <ul>
+            <li>Rozpoznanie histopatologiczne</li>
+            <li>Opisy badań obrazowych (TK, MR, PET)</li>
+            <li>Karty informacyjne leczenia szpitalnego</li>
+            <li>Aktualne wyniki badań krwi</li>
+            <li>Płyty / obrazy DICOM — jeśli dostępne</li>
+            <li>Lista dotychczasowego leczenia</li>
+            <li>Aktualnie przyjmowane leki</li>
+            <li>Twoje pytania do lekarza</li>
+          </ul>
+          <p class="note">
+            Nie masz wszystkiego? Nie szkodzi — przekaż to, co masz, resztę
+            omówimy podczas konsultacji.
+          </p>
+        </div>
+        <div class="icard">
+          <div class="icard-head">
+            <div class="ic-icon">
+              <svg viewbox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 8v4m0 4h.01"></path>
+              </svg>
+            </div>
+            <h3>Płyta CD z badaniem</h3>
+          </div>
+          <p>Jeśli będzie potrzebna — poinformuję, jak ją udostępnić.</p>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p>
+        Michał Szyburski · Specjalista onkolog radioterapeuta · Warszawa · tel.
+        577 169 800 (codziennie 8:00–17:00)<br /><a href="../index.html"
+          >← Strona główna</a
+        >
+        · <a href="polityka-prywatnosci.html">Polityka prywatności</a>
+      </p>
+    </footer>
+    <a class="callbar" href="tel:+48577169800">
+      <svg viewbox="0 0 24 24">
+        <path
+          d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81 19.79 19.79 0 01.22 1.18 2 2 0 012.18 0h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.91 7.91a16 16 0 006.08 6.08l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        ></path>
+      </svg>
+      <span>Zadzwoń: 577 169 800</span>
+    </a>
+  </body>
+</html>
